@@ -10,8 +10,6 @@ import SnapKit
 
 class MessegeViewController: UIViewController {
     
-   
-    
     lazy var collectionView: UICollectionView = {
         let  layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical

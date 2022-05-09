@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
- class KontactViewController: UIViewController {
+ class HomeViewController: UIViewController {
      let model = DataModel()
 
     lazy var collectionView: UICollectionView = {
@@ -62,7 +62,7 @@ import SnapKit
         }
     }
 }
-extension KontactViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model.data.count
         

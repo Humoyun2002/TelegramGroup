@@ -21,7 +21,7 @@ class telegramVC: UITabBarController {
         tabBar.backgroundColor = #colorLiteral(red: 0.1058823541, green: 0.1058823541, blue: 0.1058823541, alpha: 1)
         tabBar.barTintColor = .white
         tabBar.tintColor = .blue
-        let homeVC = KontactViewController()
+        let homeVC = HomeViewController()
         
         let home = UITabBarItem(title: "bosh sahifa", image: #imageLiteral(resourceName: "user "),selectedImage: #imageLiteral(resourceName: "user ") )
         
