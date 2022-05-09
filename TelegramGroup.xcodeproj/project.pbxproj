@@ -24,6 +24,9 @@
 		58E399AE2828EE2E00AE0CA5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */; };
 		58E399B12828EF9200AE0CA5 /* KonTactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B02828EF9200AE0CA5 /* KonTactCell.swift */; };
 		58E399B42828F01800AE0CA5 /* KontactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B32828F01800AE0CA5 /* KontactData.swift */; };
+		58E399B6282933CD00AE0CA5 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B5282933CD00AE0CA5 /* Firebase.swift */; };
+		58E399B8282933ED00AE0CA5 /* Codefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B7282933ED00AE0CA5 /* Codefile.swift */; };
+		58E399BB2829377500AE0CA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58E399BA2829377500AE0CA5 /* GoogleService-Info.plist */; };
 		DDF4126BE498848629C807C9 /* Pods_TelegramGroup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501EDB47EBF6AEFB3DA136BE /* Pods_TelegramGroup.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		58E399B02828EF9200AE0CA5 /* KonTactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonTactCell.swift; sourceTree = "<group>"; };
 		58E399B32828F01800AE0CA5 /* KontactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactData.swift; sourceTree = "<group>"; };
+		58E399B5282933CD00AE0CA5 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		58E399B7282933ED00AE0CA5 /* Codefile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codefile.swift; sourceTree = "<group>"; };
+		58E399BA2829377500AE0CA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0318AE75561442A6C4809CA /* Pods-TelegramGroup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramGroup.release.xcconfig"; path = "Target Support Files/Pods-TelegramGroup/Pods-TelegramGroup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +102,8 @@
 				58198EE12826A42600C05940 /* AppDelegate.swift */,
 				58198EE32826A42600C05940 /* SceneDelegate.swift */,
 				58198EE52826A42600C05940 /* ViewController.swift */,
+				58E399B5282933CD00AE0CA5 /* Firebase.swift */,
+				58E399B7282933ED00AE0CA5 /* Codefile.swift */,
 				58E399A82828EDCC00AE0CA5 /* TabBar */,
 				58E399AF2828EF7800AE0CA5 /* Cell */,
 				58E399B22828EFED00AE0CA5 /* KonTactData */,
@@ -103,6 +111,7 @@
 				58198EEA2826A42700C05940 /* Assets.xcassets */,
 				58198EEC2826A42700C05940 /* LaunchScreen.storyboard */,
 				58198EEF2826A42700C05940 /* Info.plist */,
+				58E399BA2829377500AE0CA5 /* GoogleService-Info.plist */,
 			);
 			path = TelegramGroup;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58198EEE2826A42700C05940 /* LaunchScreen.storyboard in Resources */,
+				58E399BB2829377500AE0CA5 /* GoogleService-Info.plist in Resources */,
 				58198EEB2826A42700C05940 /* Assets.xcassets in Resources */,
 				58198EE92826A42600C05940 /* Main.storyboard in Resources */,
 			);
@@ -263,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E399B6282933CD00AE0CA5 /* Firebase.swift in Sources */,
 				58E399B42828F01800AE0CA5 /* KontactData.swift in Sources */,
 				58E399B12828EF9200AE0CA5 /* KonTactCell.swift in Sources */,
 				172A65A32829081D007F7B5C /* HeaderViewCell.swift in Sources */,
+				58E399B8282933ED00AE0CA5 /* Codefile.swift in Sources */,
 				58E399AC2828EE1000AE0CA5 /* MessegeViewController.swift in Sources */,
 				172A65A1282906C7007F7B5C /* ChatCell.swift in Sources */,
 				172A65A5282908A7007F7B5C /* SelectData.swift in Sources */,

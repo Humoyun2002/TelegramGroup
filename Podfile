@@ -7,4 +7,7 @@ target 'TelegramGroup' do
 
   # Pods for TelegramGroup
 pod 'SnapKit'
+pod 'Firebase'
+pod 'Firebase/Auth'
+
 end
