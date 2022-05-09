@@ -28,19 +28,17 @@ class MessegeViewController: UIViewController {
     }()
    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        view.backgroundColor = .white
         initView()
-        view.addSubview(collectionView)
-        collectionView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-        
     }
-   
-     private func initView() {
+         func initView() {
          
-        
+             view.backgroundColor = .white
+             view.addSubview(collectionView)
+             collectionView.snp.makeConstraints { make in
+                 make.edges.equalToSuperview()
+             }
     
   }
 
