@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172A65A1282906C7007F7B5C /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A0282906C7007F7B5C /* ChatCell.swift */; };
+		172A65A32829081D007F7B5C /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A22829081D007F7B5C /* HeaderViewCell.swift */; };
+		172A65A5282908A7007F7B5C /* SelectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A4282908A7007F7B5C /* SelectData.swift */; };
+		172A65A72829091C007F7B5C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A62829091C007F7B5C /* HeaderView.swift */; };
+		172A65A9282913AD007F7B5C /* JumpingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A8282913AD007F7B5C /* JumpingController.swift */; };
 		58198EE22826A42600C05940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE12826A42600C05940 /* AppDelegate.swift */; };
 		58198EE42826A42600C05940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE32826A42600C05940 /* SceneDelegate.swift */; };
 		58198EE62826A42600C05940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE52826A42600C05940 /* ViewController.swift */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172A65A0282906C7007F7B5C /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		172A65A22829081D007F7B5C /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
+		172A65A4282908A7007F7B5C /* SelectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectData.swift; sourceTree = "<group>"; };
+		172A65A62829091C007F7B5C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		172A65A8282913AD007F7B5C /* JumpingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingController.swift; sourceTree = "<group>"; };
 		501EDB47EBF6AEFB3DA136BE /* Pods_TelegramGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegramGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FD3ED463D24888A73F52D2 /* Pods-TelegramGroup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramGroup.debug.xcconfig"; path = "Target Support Files/Pods-TelegramGroup/Pods-TelegramGroup.debug.xcconfig"; sourceTree = "<group>"; };
 		58198EDE2826A42600C05940 /* TelegramGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +113,8 @@
 				58E399A62828ED5000AE0CA5 /* TabBAr.swift */,
 				58E399A92828EDF400AE0CA5 /* KontactViewController.swift */,
 				58E399AB2828EE0F00AE0CA5 /* MessegeViewController.swift */,
+				172A65A62829091C007F7B5C /* HeaderView.swift */,
+				172A65A8282913AD007F7B5C /* JumpingController.swift */,
 				58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */,
 			);
 			path = TabBar;
@@ -112,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				58E399B02828EF9200AE0CA5 /* KonTactCell.swift */,
+				172A65A0282906C7007F7B5C /* ChatCell.swift */,
+				172A65A22829081D007F7B5C /* HeaderViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -120,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				58E399B32828F01800AE0CA5 /* KontactData.swift */,
+				172A65A4282908A7007F7B5C /* SelectData.swift */,
 			);
 			path = KonTactData;
 			sourceTree = "<group>";
@@ -250,13 +265,18 @@
 			files = (
 				58E399B42828F01800AE0CA5 /* KontactData.swift in Sources */,
 				58E399B12828EF9200AE0CA5 /* KonTactCell.swift in Sources */,
+				172A65A32829081D007F7B5C /* HeaderViewCell.swift in Sources */,
 				58E399AC2828EE1000AE0CA5 /* MessegeViewController.swift in Sources */,
+				172A65A1282906C7007F7B5C /* ChatCell.swift in Sources */,
+				172A65A5282908A7007F7B5C /* SelectData.swift in Sources */,
 				58E399AA2828EDF400AE0CA5 /* KontactViewController.swift in Sources */,
 				58198EE62826A42600C05940 /* ViewController.swift in Sources */,
 				58198EE22826A42600C05940 /* AppDelegate.swift in Sources */,
 				58198EE42826A42600C05940 /* SceneDelegate.swift in Sources */,
+				172A65A9282913AD007F7B5C /* JumpingController.swift in Sources */,
 				58E399AE2828EE2E00AE0CA5 /* SettingViewController.swift in Sources */,
 				58E399A72828ED5000AE0CA5 /* TabBAr.swift in Sources */,
+				172A65A72829091C007F7B5C /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
