@@ -1,0 +1,6 @@
+framework module Pods_TelegramGroup {
+  umbrella header "Pods-TelegramGroup-umbrella.h"
+
+  export *
+  module * { export * }
+}
