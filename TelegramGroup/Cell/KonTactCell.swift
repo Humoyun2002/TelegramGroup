@@ -38,7 +38,7 @@ class KontactCell: UICollectionViewCell {
          }
          self.addSubview(nameLabel)
          nameLabel.text = "Name"
-         nameLabel.textColor = .white
+         nameLabel.textColor = .black
          nameLabel.font = .systemFont(ofSize: 15)
          nameLabel.snp.makeConstraints { make in
              make.top.equalToSuperview().offset(10)
@@ -49,7 +49,7 @@ class KontactCell: UICollectionViewCell {
         
          self.addSubview(timeLabel)
          timeLabel.text = "oxirgi faollik 2min "
-         timeLabel.textColor = .white
+         timeLabel.textColor = .black
          timeLabel.font = .systemFont(ofSize: 10)
          timeLabel.snp.makeConstraints { make in
              make.top.equalTo(nameLabel.snp.bottom).offset(5)
@@ -58,7 +58,7 @@ class KontactCell: UICollectionViewCell {
              make.width.equalTo(200)
          }
          self.addSubview(seperatorView)
-         seperatorView.backgroundColor = .systemGray6
+         seperatorView.backgroundColor = .black
          seperatorView.snp.makeConstraints { make in
              make.top.equalTo(timeLabel.snp.bottom).offset(5)
              make.leading.equalToSuperview().inset(65)
