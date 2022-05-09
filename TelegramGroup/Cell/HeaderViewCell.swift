@@ -9,7 +9,7 @@ import UIKit
 import  SnapKit
 
 class HeaderViewCell:UICollectionViewCell{
-    
+    static let identifier = "HeaderViewCell"
     let titleLabel = UILabel()
     
     func setText(text: String) {
