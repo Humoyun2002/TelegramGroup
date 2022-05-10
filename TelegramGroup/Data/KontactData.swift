@@ -34,3 +34,27 @@ struct DataModel {
         
     ]
 }
+
+
+
+struct SettingsData{
+    var imageSetting : String
+    var nameSetting : String
+}
+struct SettingsDataModel {
+    let SettingData = [
+    SettingsData(imageSetting: "saved", nameSetting: "Saved Messages"),
+    SettingsData(imageSetting: "phone", nameSetting: "Recent Calls"),
+    SettingsData(imageSetting: "devices", nameSetting: "Devices"),
+    SettingsData(imageSetting: "folder", nameSetting: "Chat Folders"),
+    SettingsData(imageSetting: "notification", nameSetting: "Notifications and Sounds"),
+    SettingsData(imageSetting: "padlock", nameSetting: "Privacy and Security"),
+    SettingsData(imageSetting: "database", nameSetting: "Data and Storage"),
+    SettingsData(imageSetting: "appearence", nameSetting: "Appearence"),
+    SettingsData(imageSetting: "global", nameSetting: "Language"),
+    SettingsData(imageSetting: "sticker", nameSetting: "Stickers and Emoji"),
+    SettingsData(imageSetting: "ask", nameSetting: "Ask a Question"),
+    SettingsData(imageSetting: "information", nameSetting: "Telegram FAQ"),
+    SettingsData(imageSetting: "bulb", nameSetting: "Telegram Features")
+    ]
+}
