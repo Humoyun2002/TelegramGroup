@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		172A65A1282906C7007F7B5C /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A0282906C7007F7B5C /* ChatCell.swift */; };
-		172A65A32829081D007F7B5C /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A22829081D007F7B5C /* HeaderViewCell.swift */; };
-		172A65A5282908A7007F7B5C /* SelectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A4282908A7007F7B5C /* SelectData.swift */; };
-		172A65A72829091C007F7B5C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A62829091C007F7B5C /* HeaderView.swift */; };
-		172A65A9282913AD007F7B5C /* JumpingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A8282913AD007F7B5C /* JumpingController.swift */; };
+		172A65A1282906C7007F7B5C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A0282906C7007F7B5C /* MessageCell.swift */; };
+		172A65A5282908A7007F7B5C /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A65A4282908A7007F7B5C /* MessageData.swift */; };
 		58198EE22826A42600C05940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE12826A42600C05940 /* AppDelegate.swift */; };
 		58198EE42826A42600C05940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE32826A42600C05940 /* SceneDelegate.swift */; };
 		58198EE62826A42600C05940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58198EE52826A42600C05940 /* ViewController.swift */; };
@@ -20,7 +17,7 @@
 		58198EEE2826A42700C05940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58198EEC2826A42700C05940 /* LaunchScreen.storyboard */; };
 		58E399A72828ED5000AE0CA5 /* TabBAr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399A62828ED5000AE0CA5 /* TabBAr.swift */; };
 		58E399AA2828EDF400AE0CA5 /* KontactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399A92828EDF400AE0CA5 /* KontactViewController.swift */; };
-		58E399AC2828EE1000AE0CA5 /* MessegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399AB2828EE0F00AE0CA5 /* MessegeViewController.swift */; };
+		58E399AC2828EE1000AE0CA5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399AB2828EE0F00AE0CA5 /* MessageViewController.swift */; };
 		58E399AE2828EE2E00AE0CA5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */; };
 		58E399B12828EF9200AE0CA5 /* KonTactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B02828EF9200AE0CA5 /* KonTactCell.swift */; };
 		58E399B42828F01800AE0CA5 /* KontactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E399B32828F01800AE0CA5 /* KontactData.swift */; };
@@ -31,11 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		172A65A0282906C7007F7B5C /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
-		172A65A22829081D007F7B5C /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
-		172A65A4282908A7007F7B5C /* SelectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectData.swift; sourceTree = "<group>"; };
-		172A65A62829091C007F7B5C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		172A65A8282913AD007F7B5C /* JumpingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingController.swift; sourceTree = "<group>"; };
+		172A65A0282906C7007F7B5C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		172A65A4282908A7007F7B5C /* MessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
 		501EDB47EBF6AEFB3DA136BE /* Pods_TelegramGroup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegramGroup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FD3ED463D24888A73F52D2 /* Pods-TelegramGroup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegramGroup.debug.xcconfig"; path = "Target Support Files/Pods-TelegramGroup/Pods-TelegramGroup.debug.xcconfig"; sourceTree = "<group>"; };
 		58198EDE2826A42600C05940 /* TelegramGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +42,7 @@
 		58198EEF2826A42700C05940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E399A62828ED5000AE0CA5 /* TabBAr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBAr.swift; sourceTree = "<group>"; };
 		58E399A92828EDF400AE0CA5 /* KontactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactViewController.swift; sourceTree = "<group>"; };
-		58E399AB2828EE0F00AE0CA5 /* MessegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessegeViewController.swift; sourceTree = "<group>"; };
+		58E399AB2828EE0F00AE0CA5 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		58E399B02828EF9200AE0CA5 /* KonTactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonTactCell.swift; sourceTree = "<group>"; };
 		58E399B32828F01800AE0CA5 /* KontactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontactData.swift; sourceTree = "<group>"; };
@@ -70,6 +64,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172A65AA282A30BE007F7B5C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				58198EE12826A42600C05940 /* AppDelegate.swift */,
+				58198EE32826A42600C05940 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		172A65AB282A30E4007F7B5C /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				58198EE52826A42600C05940 /* ViewController.swift */,
+				58E399B5282933CD00AE0CA5 /* Firebase.swift */,
+				58E399B7282933ED00AE0CA5 /* Codefile.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		172A65AC282A3124007F7B5C /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				58198EE72826A42600C05940 /* Main.storyboard */,
+				58198EEC2826A42700C05940 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		24FAEB7A8BBDECE552773338 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,17 +121,13 @@
 		58198EE02826A42600C05940 /* TelegramGroup */ = {
 			isa = PBXGroup;
 			children = (
-				58198EE12826A42600C05940 /* AppDelegate.swift */,
-				58198EE32826A42600C05940 /* SceneDelegate.swift */,
-				58198EE52826A42600C05940 /* ViewController.swift */,
-				58E399B5282933CD00AE0CA5 /* Firebase.swift */,
-				58E399B7282933ED00AE0CA5 /* Codefile.swift */,
+				172A65AA282A30BE007F7B5C /* Delegate */,
+				172A65AB282A30E4007F7B5C /* MainController */,
 				58E399A82828EDCC00AE0CA5 /* TabBar */,
-				58E399AF2828EF7800AE0CA5 /* Cell */,
-				58E399B22828EFED00AE0CA5 /* KonTactData */,
-				58198EE72826A42600C05940 /* Main.storyboard */,
+				58E399AF2828EF7800AE0CA5 /* Cells */,
+				58E399B22828EFED00AE0CA5 /* Data */,
 				58198EEA2826A42700C05940 /* Assets.xcassets */,
-				58198EEC2826A42700C05940 /* LaunchScreen.storyboard */,
+				172A65AC282A3124007F7B5C /* StoryBoard */,
 				58198EEF2826A42700C05940 /* Info.plist */,
 				58E399BA2829377500AE0CA5 /* GoogleService-Info.plist */,
 			);
@@ -121,31 +139,28 @@
 			children = (
 				58E399A62828ED5000AE0CA5 /* TabBAr.swift */,
 				58E399A92828EDF400AE0CA5 /* KontactViewController.swift */,
-				58E399AB2828EE0F00AE0CA5 /* MessegeViewController.swift */,
-				172A65A62829091C007F7B5C /* HeaderView.swift */,
-				172A65A8282913AD007F7B5C /* JumpingController.swift */,
+				58E399AB2828EE0F00AE0CA5 /* MessageViewController.swift */,
 				58E399AD2828EE2E00AE0CA5 /* SettingViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
 		};
-		58E399AF2828EF7800AE0CA5 /* Cell */ = {
+		58E399AF2828EF7800AE0CA5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				58E399B02828EF9200AE0CA5 /* KonTactCell.swift */,
-				172A65A0282906C7007F7B5C /* ChatCell.swift */,
-				172A65A22829081D007F7B5C /* HeaderViewCell.swift */,
+				172A65A0282906C7007F7B5C /* MessageCell.swift */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		58E399B22828EFED00AE0CA5 /* KonTactData */ = {
+		58E399B22828EFED00AE0CA5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				58E399B32828F01800AE0CA5 /* KontactData.swift */,
-				172A65A4282908A7007F7B5C /* SelectData.swift */,
+				172A65A4282908A7007F7B5C /* MessageData.swift */,
 			);
-			path = KonTactData;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		85F6C6374EB82F1A6A7E53A2 /* Pods */ = {
@@ -276,19 +291,16 @@
 				58E399B6282933CD00AE0CA5 /* Firebase.swift in Sources */,
 				58E399B42828F01800AE0CA5 /* KontactData.swift in Sources */,
 				58E399B12828EF9200AE0CA5 /* KonTactCell.swift in Sources */,
-				172A65A32829081D007F7B5C /* HeaderViewCell.swift in Sources */,
 				58E399B8282933ED00AE0CA5 /* Codefile.swift in Sources */,
-				58E399AC2828EE1000AE0CA5 /* MessegeViewController.swift in Sources */,
-				172A65A1282906C7007F7B5C /* ChatCell.swift in Sources */,
-				172A65A5282908A7007F7B5C /* SelectData.swift in Sources */,
+				58E399AC2828EE1000AE0CA5 /* MessageViewController.swift in Sources */,
+				172A65A1282906C7007F7B5C /* MessageCell.swift in Sources */,
+				172A65A5282908A7007F7B5C /* MessageData.swift in Sources */,
 				58E399AA2828EDF400AE0CA5 /* KontactViewController.swift in Sources */,
 				58198EE62826A42600C05940 /* ViewController.swift in Sources */,
 				58198EE22826A42600C05940 /* AppDelegate.swift in Sources */,
 				58198EE42826A42600C05940 /* SceneDelegate.swift in Sources */,
-				172A65A9282913AD007F7B5C /* JumpingController.swift in Sources */,
 				58E399AE2828EE2E00AE0CA5 /* SettingViewController.swift in Sources */,
 				58E399A72828ED5000AE0CA5 /* TabBAr.swift in Sources */,
-				172A65A72829091C007F7B5C /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

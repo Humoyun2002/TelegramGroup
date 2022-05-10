@@ -8,23 +8,23 @@
 import UIKit
 import SnapKit
 
- class HomeViewController: UIViewController {
-     let model = DataModel()
-
+class HomeViewController: UIViewController {
+    let model = DataModel()
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
-         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(KontactCell.self, forCellWithReuseIdentifier: KontactCell.identifier)
         
         return collectionView
         
     }()
-     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
@@ -32,21 +32,21 @@ import SnapKit
     
     func initView() {
         
-
-    let searchBar = UISearchBar()
-    view.addSubview(searchBar)
-    searchBar.placeholder = "Qidiruv"
-    searchBar.backgroundColor = .white
-    searchBar.snp.makeConstraints { make in
-        make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(5)
-        make.leading.equalToSuperview()
-        make.trailing.equalToSuperview().inset(60)
-        make.height.equalTo(60)
-    }
+        
+        let searchBar = UISearchBar()
+        view.addSubview(searchBar)
+        searchBar.placeholder = "Qidiruv"
+        searchBar.backgroundColor = .white
+        searchBar.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(5)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview().inset(60)
+            make.height.equalTo(60)
+        }
         let tahrirlashButton = UIButton()
         view.addSubview(tahrirlashButton)
         tahrirlashButton.setImage(UIImage(named: "edit")?.withTintColor(.blue), for: .normal)
-
+        
         tahrirlashButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(5)
             make.leading.equalTo(searchBar.snp.trailing)
@@ -58,7 +58,7 @@ import SnapKit
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(700)
             make.width.equalTo(10)
-
+            
         }
     }
 }
@@ -67,7 +67,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return model.data.count
         
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: collectionView.frame.width - 10, height: 60)
@@ -79,7 +79,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.backgroundColor = .white
         cell.nameLabel.text = model.data[indexPath.item].name
         cell.timeLabel.text = model.data[indexPath.item].vaqti
-cell.kontactButton.image = UIImage(named: model.data[indexPath.item].imageFoto)
+        cell.kontactButton.image = UIImage(named: model.data[indexPath.item].imageFoto)
         return cell
     }
     

@@ -27,7 +27,7 @@ class telegramVC: UITabBarController {
         
         homeVC.tabBarItem = home
       
-        let bookVC = MessegeViewController()
+        let bookVC = MessageViewController()
         let books = UITabBarItem(title: "messege", image: UIImage(named: "messege"), selectedImage: UIImage(named: "messege"))
        
         bookVC.tabBarItem = books

@@ -17,7 +17,7 @@ class CodeVerificationVC: UIViewController {
     
     let succesImage = UIImageView()
     let successText = UILabel ()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -53,46 +53,46 @@ class CodeVerificationVC: UIViewController {
         
     }
     
-   @objc private func confirmCode() {
-       guard let code = codeTextField.text, !code.isEmpty else { return }
-
-       let credential = PhoneAuthProvider.provider().credential(
-         withVerificationID: verificationID,
-         verificationCode: code
-       )
-
-
-       Auth.auth().signIn(with: credential) { authResult, error in
-           if let error = error {
-             let authError = error as NSError
-             if authError.code == AuthErrorCode.secondFactorRequired.rawValue {
-               // The user is a multi-factor user. Second factor challenge is required.
-               let resolver = authError
-                 .userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
-               var displayNameString = ""
-               for tmpFactorInfo in resolver.hints {
-                 displayNameString += tmpFactorInfo.displayName ?? ""
-                 displayNameString += " "
-               }
-              print("Select factor to sign in\n\(displayNameString)")
-             } else {
-               print(error.localizedDescription)
-               return
-             }
-             // ...
-             return
-           }
-           
-           
-           print("Success in sign in")
+    @objc private func confirmCode() {
+        guard let code = codeTextField.text, !code.isEmpty else { return }
+        
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: verificationID,
+            verificationCode: code
+        )
+        
+        
+        Auth.auth().signIn(with: credential) { authResult, error in
+            if let error = error {
+                let authError = error as NSError
+                if authError.code == AuthErrorCode.secondFactorRequired.rawValue {
+                    // The user is a multi-factor user. Second factor challenge is required.
+                    let resolver = authError
+                        .userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
+                    var displayNameString = ""
+                    for tmpFactorInfo in resolver.hints {
+                        displayNameString += tmpFactorInfo.displayName ?? ""
+                        displayNameString += " "
+                    }
+                    print("Select factor to sign in\n\(displayNameString)")
+                } else {
+                    print(error.localizedDescription)
+                    return
+                }
+                // ...
+                return
+            }
             
-           }
-           
-       }
-       @objc func telegramView() {
-           let vc = telegramVC()
-           vc.modalPresentationStyle = .fullScreen
-           present(vc, animated: true, completion: nil)
+            
+            print("Success in sign in")
+            
+        }
+        
+    }
+    @objc func telegramView() {
+        let vc = telegramVC()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 }
 
