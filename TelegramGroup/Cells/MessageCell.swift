@@ -42,25 +42,26 @@ class MessageCell: UICollectionViewCell {
         self.addSubview(name)
         name.text = ""
         name.textColor = .black
-        name.font = .systemFont(ofSize: 20)
+        name.font = .systemFont(ofSize: 16)
         name.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(3)
             make.leading.equalTo(image.snp.leading).offset(70)
             make.height.equalTo(30)
-            
+        }
         
         self.addSubview(text)
         text.text = ""
         text.textColor = .black
         text.textAlignment = .left
         text.numberOfLines = 0
-        text.font = .systemFont(ofSize: 15)
+        text.font = .systemFont(ofSize: 12)
         text.snp.makeConstraints { make in
             make.top.equalTo(name.snp.bottom).offset(3)
             make.leading.equalTo(image.snp.leading).offset(70)
             make.height.equalTo(15)
-            make.width.equalTo(250)
+            
         }
+            
         let lineView = UIView()
         self.addSubview(lineView)
         lineView.backgroundColor = .black
@@ -73,4 +74,5 @@ class MessageCell: UICollectionViewCell {
         
     }
 }
-}
+
+
